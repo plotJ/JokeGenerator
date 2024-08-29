@@ -2,7 +2,7 @@
 
 Welcome to JokeGenerator! This project uses OpenAI's GPT-3.5 Turbo model to create custom jokes based on user-specified parameters.
 
-
+![JokeGenerator Interface](https://github.com/plotJ/JokeGenerator/raw/main/jokegenerator.png)
 
 ## Features
 
