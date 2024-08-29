@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# JokeGenerator
+
+Welcome to JokeGenerator! This project uses OpenAI's GPT-3.5 Turbo model to create custom jokes based on user-specified parameters.
+
+
+
+## Features
+
+- Generate jokes with customizable topics, tones, and types
+- Adjustable creativity level using a temperature slider
+- Real-time joke generation using AI
+- Responsive web interface built with Next.js and Tailwind CSS
+
+## Tech Stack
+
+- Next.js 13 (App Router)
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui components
+- OpenAI API for joke generation
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js (v18 or later recommended)
+- npm or yarn
+- OpenAI API key
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```
+   git clone https://github.com/plotJ/JokeGenerator.git
+   cd JokeGenerator
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. Install dependencies:
+   ```
+   npm install
+   ```
+   or
+   ```
+   yarn install
+   ```
 
-## Learn More
+3. Create a `.env.local` file in the root directory and add your OpenAI API key:
+   ```
+   OPENAI_API_KEY=your_api_key_here
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Start the development server:
+   ```
+   npm run dev
+   ```
+   or
+   ```
+   yarn dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Usage
 
-## Deploy on Vercel
+1. Select or enter a topic for your joke.
+2. Choose a tone (e.g., Witty, Sarcastic, Silly).
+3. Pick a joke type (e.g., Pun, Knock-Knock, Story).
+4. Adjust the creativity level using the temperature slider.
+5. Click "Generate Joke" to create your custom joke.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The AI will generate a joke based on your inputs and provide ratings for humor, appropriateness, and cleverness.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Project Structure
+
+- `app/`: Contains the main application code (Next.js 13 App Router)
+- `components/`: Reusable React components
+- `lib/`: Utility functions and configurations
+- `public/`: Static assets
+
+## Deployment
+
+This project is set up for easy deployment on Vercel. Connect your GitHub repository to Vercel for automatic deployments.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+- OpenAI for providing the GPT-3.5 Turbo model
+- Next.js team for the amazing framework
+- shadcn for the UI components
+- All contributors and users of this project
+
+## Support
+
+If you encounter any issues or have questions, please file an issue on the GitHub repository.
+
+Enjoy your AI-generated jokes!
